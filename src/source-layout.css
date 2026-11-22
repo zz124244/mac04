@@ -3,9 +3,11 @@
    absent from the static prototypes; they must not replace original card DOM. */
 html{scrollbar-width:none}::-webkit-scrollbar{display:none}
 .reference-surface{width:100%;max-width:480px;margin:0 auto;min-height:100vh}
-.reference-surface>header[class],.reference-surface>nav[class]{left:50%;right:auto;width:100%;max-width:480px;transform:translateX(-50%)}
+.reference-surface>header[class],.reference-surface>nav[class]{right:auto}
+.reference-surface>header.fixed,.reference-surface>header.absolute,.reference-surface>nav.fixed,.reference-surface>nav.absolute{left:50%;width:100%;max-width:480px;transform:translateX(-50%)}
+.reference-surface>header.relative,.reference-surface>nav.relative{left:auto;right:auto;transform:none}
 .reference-surface>header[class]{top:0}
-.reference-surface>main[class]{padding-top:calc(56px + env(safe-area-inset-top,0px))}
+.reference-surface>main[class]{padding-top:calc(56px + env(safe-area-inset-top,0px));overflow-x:hidden}
 .reference-overview>main[class]{padding-top:calc(64px + env(safe-area-inset-top,0px))}
 /* Primary-tab headers are in normal flow; avoid adding a second header offset. */
 .reference-home>main[class],.reference-community>main[class],.reference-overview>main[class]{padding-top:8px!important}
