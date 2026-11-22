@@ -1,7 +1,7 @@
-.app-stage{position:relative;width:100%;max-width:100%;min-height:100vh;min-height:100dvh;overflow-x:hidden;isolation:isolate}
+.app-stage{position:relative;width:100%;max-width:100%;min-height:100vh;min-height:100dvh;overflow-x:hidden;overscroll-behavior-x:none;isolation:isolate}
 .app-background{position:fixed;inset:0;z-index:0;pointer-events:none;background:#f8f9ff url('/backgrounds/app-background.png') center top/cover no-repeat}
 .app-background::after{content:"";position:absolute;inset:0;background:rgba(255,255,255,.18)}
-.app-scroll-layer{position:relative;width:100%;max-width:100%;z-index:1;min-height:100vh;min-height:100dvh;overflow-x:hidden}
+.app-scroll-layer{position:relative;width:100%;max-width:100%;z-index:1;min-height:100vh;min-height:100dvh;overflow-x:hidden;overscroll-behavior-x:none}
 .app-scroll-layer .reference-surface{background:transparent!important}
 .app-scroll-layer main{background-color:rgba(248,249,255,.68)!important}
 .app-scroll-layer .reference-login main{background-color:rgba(248,249,255,.6)!important}
